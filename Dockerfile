@@ -5,7 +5,7 @@ FROM php:8.0-apache
 WORKDIR /var/www/html
 
 # Copy file project ke dalam direktori kerja di container
-COPY ./sistem-pinjam/ /var/www/html/
+COPY . /var/www/html/ # Menyalin semua file dari root
 
 # Set permission yang tepat untuk direktori
 RUN chown -R www-data:www-data /var/www/html \
