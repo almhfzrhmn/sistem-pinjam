@@ -26,6 +26,6 @@ jobs:
     - name: Build and push Docker image
       uses: docker/build-push-action@v6
       with:
-        context: ./sistem-pinjam # Ubah sesuai struktur proyek
+        context: .
         push: true
         tags: almahfuzhrohman/sistem-pinjam:latest
