@@ -1,6 +1,9 @@
 # Gunakan base image PHP dengan Apache
 FROM php:8.0-apache
 
+# Set work directory in container
+WORKDIR /var/www/html
+
 # Copy file project ke dalam direktori kerja di container
 COPY ./sistem-pinjam/ /var/www/html/
 
